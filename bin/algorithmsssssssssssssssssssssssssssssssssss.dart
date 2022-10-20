@@ -1,7 +1,8 @@
 import 'sorting/bubble_sort.dart';
+import 'sorting/selection_sort.dart';
 
 void main() {
-  List<int> list = [1, 2, 5, 9, 8, 7, 22, 55, 54, 65, 66, -3];
+  List<int> list = [995,1, 2, 5, 9, 8, 7, 22, 55, 54, 65, 66, -3];
   List<MyClass> prods = [
     MyClass(price: 10, name: 'mm'),
     MyClass(price: 20, name: 'mm2'),
@@ -13,7 +14,7 @@ void main() {
       return a.price.compareTo(b.price);
     });
 
-  print(bubbleSortAlgorithm(list));
+  print(selectionSort(list));
 }
 
 class MyClass {
